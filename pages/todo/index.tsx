@@ -2,14 +2,19 @@ import { NextPage } from "next";
 import { useRecoilValue } from "recoil";
 import { TodoItem } from "../../components/todo/TodoItem";
 import { TodoItemCreator } from "../../components/todo/TodoItemCreator";
-import { todoListState } from "./state";
+import { TodoListFilters } from "../../components/todo/TodoListFilters";
+import { TodoListStats } from "../../components/todo/TodoListStats";
+import { filteredTodoListState, todoListState } from "./state";
 
 const Todo: NextPage = () => {
-  const todoList = useRecoilValue(todoListState);
+  // const todoList = useRecoilValue(todoListState);
+  const todoList = useRecoilValue(filteredTodoListState);
 
   return (
     <div>
       <h1>TODO LIST</h1>
+      <TodoListStats />
+      <TodoListFilters />
       <TodoItemCreator />
       {todoList.map((todoItem) => (
         <TodoItem key={todoItem.id} item={todoItem} />
