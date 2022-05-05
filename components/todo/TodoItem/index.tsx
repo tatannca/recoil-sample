@@ -32,7 +32,7 @@ export const TodoItem: FC<TodoItemProps> = ({ item }) => {
     setTodoList(newList);
   };
 
-  const toggleItemComletion = () => {
+  const toggleItemCompletion = () => {
     const newList = replaceItemAtIndex(todoList, index, {
       ...item,
       isComplete: !item.isComplete,
@@ -51,7 +51,7 @@ export const TodoItem: FC<TodoItemProps> = ({ item }) => {
       <input
         type="checkbox"
         checked={item.isComplete}
-        onChange={toggleItemComletion}
+        onChange={toggleItemCompletion}
       />
       <button onClick={deleteItem}>X</button>
     </div>
