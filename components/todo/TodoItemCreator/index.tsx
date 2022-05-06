@@ -1,6 +1,6 @@
 import { ChangeEvent, FC, useState } from "react";
 import { useSetRecoilState } from "recoil";
-import { todoListState } from "../../../pages/todo/state";
+import { todoListState } from "../../../state/todo/state";
 
 let id = 0;
 const getId = () => id++;

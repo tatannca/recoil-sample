@@ -5,7 +5,7 @@ import { TodoItem } from "../../components/todo/TodoItem";
 import { TodoItemCreator } from "../../components/todo/TodoItemCreator";
 import { TodoListFilters } from "../../components/todo/TodoListFilters";
 import { TodoListStats } from "../../components/todo/TodoListStats";
-import { filteredTodoListState, todoListState } from "./state";
+import { filteredTodoListState, todoListState } from "../../state/todo/state";
 
 const Todo: NextPage = () => {
   // const todoList = useRecoilValue(todoListState);

@@ -1,6 +1,6 @@
 import { ChangeEvent, FC } from "react";
 import { useRecoilState } from "recoil";
-import { textState } from "../../pages/state";
+import { textState } from "../../state/state";
 
 export const TextInput: FC = () => {
   const [text, setText] = useRecoilState(textState);

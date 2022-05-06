@@ -1,7 +1,7 @@
 import { ChangeEvent, FC } from "react";
 import { useRecoilState } from "recoil";
-import type { todoListStateType } from "../../../pages/todo/state";
-import { todoListState } from "../../../pages/todo/state";
+import type { todoListStateType } from "../../../state/todo/state";
+import { todoListState } from "../../../state/todo/state";
 
 const replaceItemAtIndex = <T extends todoListStateType>(
   arr: T[],

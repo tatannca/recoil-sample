@@ -3,7 +3,7 @@ import { useRecoilState } from "recoil";
 import {
   todoListFilterState,
   todoListFilterType,
-} from "../../../pages/todo/state";
+} from "../../../state/todo/state";
 
 export const TodoListFilters: FC = () => {
   const [filter, setFilter] = useRecoilState(todoListFilterState);

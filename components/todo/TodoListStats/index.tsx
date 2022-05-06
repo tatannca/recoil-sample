@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useRecoilValue } from "recoil";
-import { todoListStatsState } from "../../../pages/todo/state";
+import { todoListStatsState } from "../../../state/todo/state";
 
 export const TodoListStats: FC = () => {
   const { totalNum, totalCompletedNum, totalUncompletedNum, percentCompleted } =

@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React, { Suspense, FC } from "react";
 import { useRecoilValue, useRecoilValueLoadable } from "recoil";
 import { Menu } from "../../components/Menu";
-import { zennTrendsSelector } from "./state";
+import { zennTrendsSelector } from "../../state/trends/state";
 
 const Trends: NextPage = () => {
   return (
