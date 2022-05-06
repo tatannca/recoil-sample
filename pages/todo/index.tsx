@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { useRecoilValue } from "recoil";
+import { Menu } from "../../components/Menu";
 import { TodoItem } from "../../components/todo/TodoItem";
 import { TodoItemCreator } from "../../components/todo/TodoItemCreator";
 import { TodoListFilters } from "../../components/todo/TodoListFilters";
@@ -12,7 +13,8 @@ const Todo: NextPage = () => {
 
   return (
     <div>
-      <h1>TODO LIST</h1>
+      <Menu />
+      <h2>Todo List</h2>
       <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />

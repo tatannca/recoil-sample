@@ -1,16 +1,14 @@
 import { css } from "@emotion/css";
 import { NextPage } from "next";
 import { CharacterCounter } from "../components/CharacterCounter";
+import { Menu } from "../components/Menu";
 import { TextInput } from "../components/TextInput";
-
-const Title = css`
-  text-align: center;
-`;
 
 const Home: NextPage = () => {
   return (
-    <div className={Title}>
-      <h1>Character Counter</h1>
+    <div>
+      <Menu />
+      <h2>Character Counter</h2>
       <TextInput />
       <CharacterCounter />
     </div>
